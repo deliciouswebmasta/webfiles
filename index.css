@@ -1,0 +1,2928 @@
+@charset "UTF-8";
+
+
+
+
+body {
+	width: 100vw;
+	height: auto;
+	min-height: 100vh;;
+	overflow-x:hidden;
+	background-color: whitesmoke;
+	margin:0px;
+	font-family: 'TREBUCHET MS', sans-serif;
+	position:absolute;
+	
+}
+
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px and above
+*/
+
+@media (min-width: 1281px) {
+  
+	#changingtext { 
+	color: #ffd42a;
+font-size: 2.1vw;
+font-weight: 1000;
+	}
+	
+	
+	#navbar_sign_in {
+		width: 100vw;
+		height: 4vw;
+		background-color: #243785; 
+		position: fixed;
+		z-index: 999;	
+		overflow: hidden;
+		
+	}
+	
+	#section1 {
+			width:100vw;
+			height:31vw;
+			
+		}
+	#section2 {
+			width:100vw;
+			height: 30vw;
+			background-color: whitesmoke; 
+			text-align: center;
+		    position: absolute;
+            margin-top: 22vw;
+			padding-top: 1.5vw;
+		}
+	
+	
+	
+	#section3 {
+			width:100vw;
+			height: auto;
+			background-color: whitesmoke;
+			position: absolute;
+			margin-top: 55vw;
+			text-align: center;
+			padding: 1vw 0 0 0;
+			
+		}
+	#section4 {
+			width:100vw;
+			height: 50vw;
+			background-color: lightslategray;
+			position: absolute;
+			margin-top: 160vw;
+		}
+	
+	#imageplaceholder {
+		
+		width:50vw;
+		height:31vw;
+		background-color:lightslategray;
+		float: left;
+	}
+	
+	#logoplaceholder {
+		
+		width:50vw;
+		height:31vw;
+		background-color: lightslategray;
+		float: right;
+	}
+	
+	#maintitleplaceholder{
+		
+		width:100vw;
+		height: 3vw;
+		background-color:lightslategray;
+		
+		text-align: center;
+		color: #121b42;
+		font-size: 2vw;
+		
+		letter-spacing: 0.2vw;
+		font-weight: 700;
+		padding: 4vw 0;
+	}
+	
+	#fameimg {
+		
+		width: 54vw;
+		height: 18vw;
+		margin: 4vw 0 0 -2vw;
+		
+	}
+	
+	#dealerimg {
+		
+		width: 54vw;
+		height: 18vw;
+		margin: 4vw 0 0 -6vw;
+		
+	}
+	
+	#logosimg{
+		
+		margin-left: -28vw;
+		width: 50vw;
+	}
+	
+	#formplaceholder {
+		
+		width:100vw;
+		height:8vw;
+		background-color: lightslategray;
+		position: absolute;
+		
+	}
+	
+	#formbox {
+		
+		width:90vw;
+		height:auto;
+		background-color: lightslategray;
+		margin-left: 4.5vw;
+		
+		
+		
+	}
+	
+	#inputcontainer {
+	width: 76vw;
+	height:5vw;
+	background-color: lightslategray;
+	margin:auto;
+	margin-top: 0.5vw;
+	
+	
+		
+		
+	}
+	
+	.inputtextbox {
+	
+		width:30vw;
+		height:3vw;
+		border: 0.2vw #121b42 solid;
+		border-radius: 10vw;
+		margin-right: 1vw;
+		display: inline-block;
+		background-color: whitesmoke;
+		
+	}
+	
+	
+	
+	.inputtext {
+		height: 90%;
+		width: 90%;
+		margin-left: 1vw;
+		border: transparent 1px;
+		border-radius: 10vw;
+		background-color: whitesmoke;
+		letter-spacing: 0.15vw;
+		font-size: 0.95vw;
+		
+		
+	}
+	
+	.inputtext:focus {
+		
+		outline: none;
+	}
+	
+	#signinbutton {
+		
+		color:whitesmoke;
+		width: 12vw;
+		height: 3.1vw;
+		border: 0.2vw #121b42 solid;
+		border-radius: 1vw;
+		background-color:  #243785; 
+		font-family: 'TREBUCHET MS', sans-serif;
+		font-size: 1.1vw;
+		font-weight: 600;
+		letter-spacing: 0.05vw;
+		
+	}
+	
+	#resetpasswordtext {
+		font-size: 1vw;
+		float:right;
+		margin-top: 0.37vw;
+        margin-left: 33vw;
+		color: #121b42;
+		position:absolute;
+		
+	}
+	
+	#rememberme {
+    margin-left: -74vw;
+    color: #121b42;
+    font-size: 1vw;
+    margin-top: 3.7vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+}
+	
+	
+	
+	#rememberme input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+	
+	.checkmark {
+  position: absolute;
+  border: 0.1vw solid #121b42 ;
+  border-radius:0.35vw;
+  margin: 0.25vw 0 0 0.25vw;
+  height: 1.2vw;
+  width: 1.2vw;
+  background-color: whitesmoke;
+  margin: -1.2vw 0 0 6vw;
+}
+	
+	#rememberme input:checked ~ .checkmark {
+  background-color: whitesmoke;
+}
+	
+	.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+	
+	#rememberme input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+#rememberme .checkmark:after {
+ left: 0.3vw;
+top: 0px;
+width: 0.35vw;
+height: 0.7vw;
+border: solid #243785;
+  border-width: 0 0.2vw 0.2vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+	
+	.navbarbutton {
+		float:left;
+		
+		font-size:1.2vw;
+		color: whitesmoke;
+		text-decoration: none;
+		background-color: #243785;
+		padding: 1.3vw 2.5vw;
+		border-right: 0.12vw #121b42 solid;
+		letter-spacing: 0.13vw;
+		font-weight: 100;
+		
+	}
+	
+	#registerbutton {
+		
+		background-color: #ffd42a; 
+		border: 1vw #DC143C; 
+		font-weight:bold; 
+		letter-spacing: 0.18vw;
+		float:right;
+		font-size:1.5vw;
+		color: #243785;
+		text-decoration: none;
+		margin: 0.5vw 7vw 0 0vw;
+		
+		border-radius: 0.5vw;
+		width: 11vw;
+		height: 1.5vw;
+		padding: 0.60vw 2vw 0.85vw 2vw;
+		
+		
+	}
+	
+	#wavebackgrnd {
+		
+		background-image: url("../wave.svg");
+		background-size:cover;
+		
+		width: 100vw;
+		height: 29vw;
+		margin-top: 6vw;
+		position:absolute;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		z-index:998;
+	}
+	
+	#tiempo-entrega{
+		
+		color: #121b42;
+		margin: 4.5vw 15vw 0 0;
+		font-size: 1.7vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 200%;
+	}
+	
+	#pedidos-totales {
+		
+		color: #121b42;
+		margin: 4.5vw 0 0 15vw;
+		font-size: 1.7vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 200%;
+	}
+	
+	#pedidos-totales span {
+		
+		font-size: 2vw;
+		color: #ffd42a;
+		
+	}
+	
+	#tiempo-entrega span {
+		
+		font-size: 2vw;
+		color: #ffd42a;
+		
+	}
+	
+	#preciostitle {
+		
+		
+		color: #121b42;
+		font-size: 2.5vw; 
+		position: relative;
+		
+	}
+	
+	#pricepanelcontainer{
+		
+		display:flex;
+		width:100vw;
+		margin-top: 1.5vw
+	}
+	
+	.pricepanelshadow {
+		
+		width: 20vw;
+		height: 21vw;
+		border-right: 0.3vw solid #121b42;
+		border-radius: 2vw;
+		margin: 1.5vw 0 0 10vw;
+		padding: 1vw 0 0 0;
+		background-color: #121b42;
+		
+	}
+	
+	.pricepanel {
+		
+		width: 20vw;
+		height: 20vw;
+		border: 0.15vw solid #243785; border-radius: 2vw;
+		margin-top: -1vw;
+		padding: 1vw 0 0 0;
+		background-color: #243785;
+	}
+	
+	.pricepanel span {
+		
+		font-size:1.6vw;
+		font-weight: 500;
+		color: #ffd42a;
+		
+		
+	}
+	
+	.pricepanel div {
+		
+		width: 15vw;                      
+		height: 15vw;
+		background-color: #243785;
+		text-align: justify;
+		display: flex;
+		margin-top: 1vw;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	.pricepanel div span  {
+		
+		font-size:1.2vw;
+		font-weight: 500;
+		color: whitesmoke;
+		padding-left: 1.5vw;
+	}
+	
+	.pricepanel aside {
+		width: 5vw;                      
+		height: 15vw;
+		background-color: #243785;
+		text-align: end;
+		display: flex;
+		margin-top: -15vw;
+		margin-right: 3vw;
+		flex-direction: column;
+		justify-content: space-around;
+	float:right;	
+		
+	}
+	
+	.pricepanel aside span  {
+		
+		font-size:1.5vw;
+		font-weight: 500;
+		color: #ffd42a;
+		padding-left: 1.5vw;
+	}
+	
+
+
+	.text-title {
+	
+		color: #ffd42a;
+		font-size: 2.5vw; 
+		position: relative;
+		padding: 1.5vw 0vw 1vw 0vw;
+}
+
+
+
+	.textplaceholder {
+		
+	width: 90vw;
+	
+	background-color: #243785;
+	border: 0.15vw solid #243785; border-radius: 2vw;
+		padding-bottom: 1.5vw;
+		
+}
+
+    .textplaceholdershadow {
+	
+		border-right: 0.30vw solid #121b42; border-radius: 2vw;
+		padding-bottom: 1vw;
+		background-color: #121b42;
+		width: 90vw;
+		margin:auto;
+}
+
+	.top-botton-spacing {
+	
+		margin: 3vw auto;
+		
+}
+
+	.text {
+	
+		padding: 1vw 2vw 1vw 2vw;
+color: #121b42;
+text-align: justify;
+font-size: 1.3vw;
+line-height: 200%;
+background-color: whitesmoke;
+width: 82.5vw;
+margin: auto;
+		
+
+}
+
+	.section-title{
+	
+		color: #ffd42a;
+		font-size: 2.7vw; 
+		padding: 1.5vw 0vw 1vw 0vw;
+		margin: 0 auto;
+		width: max-content;
+		letter-spacing: 0.1vw;
+}
+
+#opinionplaceholder {
+	
+	width: 90vw;
+	height: 30vw;
+	
+	margin: 0 auto 0 auto;
+	display: flex;
+	
+	
+}
+
+.opinioncontainer {
+	
+	width: 20vw;
+	height: 25vw;
+	background-color: whitesmoke;
+	margin: auto;
+	border-radius: 1vw;
+	
+}
+
+.opinioncontainer aside {
+	
+	width:6vw;
+	height:6vw;
+	background-color: whitesmoke;
+	margin: 1.5vw auto 0 auto;
+	border-radius: 5vw;
+	border: 0.2vw solid #243785;
+	background-image: url("../19b8d6e9b13eef23ec9c746968bb88b1.jpg");
+	background-size: contain;
+}
+
+.opinioncontainer img {
+	
+	width: 6vw;
+	height: 6vw;
+	
+}
+
+.opinioncontainer div {
+	
+	text-align: justify;
+font-size: 1.1vw;
+line-height: 175%;
+	padding: 1vw;
+	color:#243785;
+	min-height: 11vw;
+	
+}
+
+.opinioncontainer span {
+float: right;
+padding-right: 1.5vw;
+font-size: 1.4vw;
+letter-spacing: 0.1vw;	
+color:#243785;
+}
+
+footer {
+height: 4vw;
+width:100vw;
+background-color: #243785;
+position: absolute;
+margin-top: 210vw;
+	
+}
+
+footer aside {
+	float: right;
+	margin-right:2vw;
+	color: #ffd42a;
+	line-height: 4vw;
+}
+
+footer div {
+	float: left;
+	margin-left:1vw;
+	color: #ffd42a;
+	line-height: 4vw;
+	}
+	
+}
+
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  	#changingtext { 
+	color: #ffd42a;
+font-size: 2.1vw;
+font-weight: 1000;
+	}	
+	
+	#navbar_sign_in {
+		width: 100vw;
+		height: 4vw;
+		background-color: #243785; 
+		position: fixed;
+		z-index: 999;	
+		overflow: hidden;
+		
+	}
+	
+	#section1 {
+			width:100vw;
+			height:31vw;
+			
+		}
+	#section2 {
+			width:100vw;
+			height: 30vw;
+			background-color: whitesmoke; 
+			text-align: center;
+		    position: absolute;
+            margin-top: 22vw;
+			padding-top: 1.5vw;
+		}
+	
+	
+	
+	#section3 {
+			width:100vw;
+			height: auto;
+			background-color: whitesmoke;
+			position: absolute;
+			margin-top: 55vw;
+			text-align: center;
+			padding: 1vw 0 0 0;
+			
+		}
+	#section4 {
+			width:100vw;
+			height: 50vw;
+			background-color: lightslategray;
+			position: absolute;
+			margin-top: 165vw;
+		}
+	
+	#imageplaceholder {
+		
+		width:50vw;
+		height:31vw;
+		background-color:lightslategray;
+		float: left;
+	}
+	
+	#logoplaceholder {
+		
+		width:50vw;
+		height:31vw;
+		background-color: lightslategray;
+		float: right;
+	}
+	
+	#maintitleplaceholder{
+		
+		width:100vw;
+		height: 3vw;
+		background-color:lightslategray;
+		
+		text-align: center;
+		color: #121b42;
+		font-size: 2vw;
+		
+		letter-spacing: 0.2vw;
+		font-weight: 700;
+		padding: 4vw 0;
+	}
+	
+	#fameimg {
+		
+		width: 54vw;
+		height: 18vw;
+		margin: 4vw 0 0 -2vw;
+		
+	}
+	
+	#dealerimg {
+		
+		width: 54vw;
+		height: 18vw;
+		margin: 4vw 0 0 -6vw;
+		
+	}
+	
+	#logosimg{
+		
+		margin-left: -28vw;
+		width: 50vw;
+	}
+	
+	#formplaceholder {
+		
+		width:100vw;
+		height:8vw;
+		background-color: lightslategray;
+		position: absolute;
+		
+	}
+	
+	#formbox {
+		
+		width:90vw;
+		height:auto;
+		background-color: lightslategray;
+		margin-left: 4.5vw;
+		
+		
+		
+	}
+	
+	#inputcontainer {
+	width: 76vw;
+	height:5vw;
+	background-color: lightslategray;
+	margin:auto;
+	margin-top: 0.5vw;
+	
+	
+		
+		
+	}
+	
+	.inputtextbox {
+	
+		width:30vw;
+		height:3vw;
+		border: 0.2vw #121b42 solid;
+		border-radius: 10vw;
+		margin-right: 1vw;
+		display: inline-block;
+		background-color: whitesmoke;
+		
+	}
+	
+	.inputtext {
+		height: 90%;
+		width: 90%;
+		margin-left: 1vw;
+		border: transparent 1px;
+		border-radius: 10vw;
+		background-color: whitesmoke;
+		letter-spacing: 0.15vw;
+		font-size: 0.95vw
+		
+		
+	}
+	
+	.inputtext:focus {
+		
+		outline: none;
+	}
+	
+	#signinbutton {
+		
+		color:whitesmoke;
+		width: 12vw;
+		height: 3.1vw;
+		border: 0.2vw #121b42 solid;
+		border-radius: 1vw;
+		background-color:  #243785; 
+		font-family: 'TREBUCHET MS', sans-serif;
+		font-size: 1.2vw;
+		font-weight: 600;
+		letter-spacing: 0.05vw;
+		
+	}
+	
+	#resetpasswordtext {
+		font-size: 1.2vw;
+		float:right;
+		margin-top: 0.37vw;
+        margin-left: 33vw;
+		color: #121b42;
+		position:absolute;
+		
+	}
+	
+	#rememberme {
+    margin-left: -74vw;
+    color: #121b42;
+    font-size: 1.2vw;
+    margin-top: 3.7vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+}
+	
+	
+	
+	#rememberme input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+	
+	.checkmark {
+  position: absolute;
+  border: 0.1vw solid #121b42 ;
+  border-radius:0.35vw;
+  margin: 0.25vw 0 0 0.25vw;
+  height: 1.2vw;
+  width: 1.2vw;
+  background-color: whitesmoke;
+  margin: -1.3vw 0 0 7vw;
+}
+	
+	#rememberme input:checked ~ .checkmark {
+  background-color: whitesmoke;
+}
+	
+	.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+	
+	#rememberme input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+#rememberme .checkmark:after {
+ left: 0.3vw;
+top: 0px;
+width: 0.35vw;
+height: 0.7vw;
+border: solid #243785;
+  border-width: 0 0.2vw 0.2vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+	
+	.navbarbutton {
+		float:left;
+		
+		font-size:1.2vw;
+		color: whitesmoke;
+		text-decoration: none;
+		background-color: #243785;
+		padding: 1.3vw 2.5vw;
+		border-right: 0.12vw #121b42 solid;
+		letter-spacing: 0.13vw;
+		font-weight: 100;
+		
+	}
+	
+	#registerbutton {
+		
+		background-color: #ffd42a; 
+		border: 1vw #DC143C; 
+		font-weight:bold; 
+		letter-spacing: 0.18vw;
+		float:right;
+		font-size:1.5vw;
+		color: #243785;
+		text-decoration: none;
+		margin: 0.5vw 7vw 0 0vw;
+		
+		border-radius: 0.5vw;
+		width: 11vw;
+		height: 1.5vw;
+		padding: 0.60vw 2vw 0.85vw 2vw;
+		
+		
+	}
+	
+	#wavebackgrnd {
+		
+		background-image: url("../wave.svg");
+		background-size:cover;
+		
+		width: 100vw;
+		height: 29vw;
+		margin-top: 6vw;
+		position:absolute;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		z-index:998;
+	}
+	
+	#tiempo-entrega{
+		
+		color: #121b42;
+		margin: 4.5vw 15vw 0 0;
+		font-size: 1.7vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 200%;
+	}
+	
+	#pedidos-totales {
+		
+		color: #121b42;
+		margin: 4.5vw 0 0 15vw;
+		font-size: 1.7vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 200%;
+	}
+	
+	#pedidos-totales span {
+		
+		font-size: 2vw;
+		color: #ffd42a;
+		
+	}
+	
+	#tiempo-entrega span {
+		
+		font-size: 2vw;
+		color: #ffd42a;
+		
+	}
+	
+	#preciostitle {
+		
+		
+		color: #121b42;
+		font-size: 2vw; 
+		position: relative;
+		
+	}
+	
+	#pricepanelcontainer{
+		
+		display:flex;
+		width:100vw;
+		margin-top: 1.5vw
+	}
+	
+	.pricepanelshadow {
+		
+		width: 20vw;
+		height: 21vw;
+		border-right: 0.3vw solid #121b42;
+		border-radius: 2vw;
+		margin: 1.5vw 0 0 10vw;
+		padding: 1vw 0 0 0;
+		background-color: #121b42;
+		
+	}
+	
+	.pricepanel {
+		
+		width: 20vw;
+		height: 20vw;
+		border: 0.15vw solid #243785; border-radius: 2vw;
+		margin-top: -1vw;
+		padding: 1vw 0 0 0;
+		background-color: #243785;
+	}
+	
+	.pricepanel span {
+		
+		font-size:1.8vw;
+		font-weight: 500;
+		color: #ffd42a;
+		
+		
+	}
+	
+	.pricepanel div {
+		
+		width: 15vw;                      
+		height: 15vw;
+		background-color: #243785;
+		text-align: justify;
+		display: flex;
+		margin-top: 1vw;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	.pricepanel div span  {
+		
+		font-size:1.3vw;
+		font-weight: 500;
+		color: whitesmoke;
+		padding-left: 1.5vw;
+	}
+	
+	.pricepanel aside {
+		width: 5vw;                      
+		height: 15vw;
+		background-color: #243785;
+		text-align: end;
+		display: flex;
+		margin-top: -15vw;
+		margin-right: 3vw;
+		flex-direction: column;
+		justify-content: space-around;
+	float:right;	
+		
+	}
+	
+	.pricepanel aside span  {
+		
+		font-size:1.6vw;
+		font-weight: 500;
+		color: #ffd42a;
+		padding-left: 1.5vw;
+	}
+	
+
+
+	.text-title {
+	
+		color: #ffd42a;
+		font-size: 2.5vw; 
+		position: relative;
+		padding: 1.5vw 0vw 1vw 0vw;
+}
+
+
+
+	.textplaceholder {
+		
+	width: 90vw;
+	
+	background-color: #243785;
+	border: 0.15vw solid #243785; border-radius: 2vw;
+		padding-bottom: 1.5vw;
+		
+}
+
+    .textplaceholdershadow {
+	
+		border-right: 0.30vw solid #121b42; border-radius: 2vw;
+		padding-bottom: 1vw;
+		background-color: #121b42;
+		width: 90vw;
+		margin:auto;
+}
+
+	.top-botton-spacing {
+	
+		margin: 3vw auto;
+		
+}
+
+	.text {
+	
+		padding: 1vw 2vw 1vw 2vw;
+color: #121b42;
+text-align: justify;
+font-size: 1.4vw;
+line-height: 200%;
+background-color: whitesmoke;
+width: 82.5vw;
+margin: auto;
+		
+
+}
+
+	.section-title{
+	
+		color: #ffd42a;
+		font-size: 2.8vw; 
+		padding: 1.5vw 0vw 1vw 0vw;
+		margin: 0 auto;
+		width: max-content;
+		letter-spacing: 0.1vw;
+}
+
+#opinionplaceholder {
+	
+	width: 90vw;
+	height: 30vw;
+	
+	margin: 0 auto 0 auto;
+	display: flex;
+	
+	
+}
+
+.opinioncontainer {
+	
+	width: 22vw;
+	height: 28vw;
+	background-color: whitesmoke;
+	margin: auto;
+	border-radius: 1vw;
+	
+}
+
+.opinioncontainer aside {
+	
+	width:6vw;
+	height:6vw;
+	background-color: whitesmoke;
+	margin: 1.5vw auto 0 auto;
+	border-radius: 5vw;
+	border: 0.2vw solid #243785;
+	background-image: url("../19b8d6e9b13eef23ec9c746968bb88b1.jpg");
+	background-size: contain;
+}
+
+.opinioncontainer img {
+	
+	width: 6vw;
+	height: 6vw;
+	
+}
+
+.opinioncontainer div {
+	
+	text-align: justify;
+font-size: 1.2vw;
+line-height: 175%;
+	padding: 1vw;
+	color:#243785;
+	min-height: 15vw;
+	
+}
+
+.opinioncontainer span {
+float: right;
+padding-right: 1.5vw;
+font-size: 1.4vw;
+letter-spacing: 0.1vw;	
+color:#243785;
+}
+
+footer {
+height: 4vw;
+width:100vw;
+background-color: #243785;
+position: absolute;
+margin-top: 215vw;
+	
+}
+
+footer aside {
+	float: right;
+	margin-right:2vw;
+	color: #ffd42a;
+	line-height: 4vw;
+}
+
+footer div {
+	float: left;
+	margin-left:1vw;
+	color: #ffd42a;
+	line-height: 4vw;
+	}
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  	
+	#navbar_sign_in {
+		width: 100vw;
+		height: 5vw;
+		background-color: #243785; 
+		position: fixed;
+		z-index: 999;	
+		overflow: hidden;
+		
+	}
+	
+	#section1 {
+			width:100vw;
+			height:31vw;
+			
+		}
+	#section2 {
+			width:100vw;
+			height: 30vw;
+			background-color: whitesmoke; 
+			text-align: center;
+		    position: absolute;
+            margin-top: 22vw;
+			padding-top: 1.5vw;
+		}
+	
+	
+	
+	#section3 {
+			width:100vw;
+			height: auto;
+			background-color: whitesmoke;
+			position: absolute;
+			margin-top: 58vw;
+			text-align: center;
+			padding: 1vw 0 0 0;
+			
+		}
+	#section4 {
+			width:100vw;
+			height: 50vw;
+			background-color: lightslategray;
+			position: absolute;
+			margin-top: 192vw;
+		}
+	
+	#imageplaceholder {
+		
+		width:50vw;
+		height:31vw;
+		background-color:lightslategray;
+		float: left;
+	}
+	
+	#logoplaceholder {
+		
+		width:50vw;
+		height:31vw;
+		background-color: lightslategray;
+		float: right;
+	}
+	
+	#maintitleplaceholder{
+		
+		width:100vw;
+		height: 3vw;
+		background-color:lightslategray;
+		text-align: center;
+		color: #121b42;
+		font-size: 2.9vw;
+		
+		letter-spacing: 0.2vw;
+		font-weight: 700;
+		padding: 4vw 0;
+	}
+	
+	#changingtext { 
+	color: #ffd42a;
+font-size: 2.9vw;
+font-weight: 1000;
+	}
+	
+	#fameimg {
+		
+		width: 54vw;
+		height: 18vw;
+		margin: 4vw 0 0 -2vw;
+		
+	}
+	
+	#dealerimg {
+		
+		width: 54vw;
+		height: 18vw;
+		margin: 4vw 0 0 -6vw;
+		
+	}
+	
+	#logosimg{
+		
+		margin-left: -28vw;
+		width: 50vw;
+	}
+	
+	#formplaceholder {
+		
+		width:100vw;
+		height:8vw;
+		background-color: lightslategray;
+		position: absolute;
+		
+	}
+	
+	#formbox {
+		
+		width:90vw;
+		height:auto;
+		background-color: lightslategray;
+		margin-left: 4.5vw;
+		
+		
+		
+	}
+	
+	#inputcontainer {
+	width: 76vw;
+	height:5vw;
+	background-color: lightslategray;
+	margin:auto;
+	margin-top: 0.5vw;
+	
+	
+		
+		
+	}
+	
+	.inputtextbox {
+	
+		width:30vw;
+		height:3vw;
+		border: 0.2vw #121b42 solid;
+		border-radius: 10vw;
+		margin-right: 1vw;
+		display: inline-block;
+		background-color: whitesmoke;
+		
+	}
+	
+	.inputtext {
+		height: 80%;
+		width: 90%;
+		margin-left: 1vw;
+		border: transparent 1px;
+		border-radius: 10vw;
+		background-color: whitesmoke;
+		letter-spacing: 0.1vw;
+		font-size: 1.1vw
+		
+		
+	}
+	
+	.inputtext:focus {
+		
+		outline: none;
+	}
+	
+	#signinbutton {
+		
+		color:whitesmoke;
+		width: 12vw;
+		height: 3.1vw;
+		border: 0.2vw #121b42 solid;
+		border-radius: 1vw;
+		background-color:  #243785; 
+		font-family: 'TREBUCHET MS', sans-serif;
+		font-size: 1.2vw;
+		font-weight: 600;
+		letter-spacing: 0.05vw;
+		
+	}
+	
+	#resetpasswordtext {
+		font-size: 1.3vw;
+		float:right;
+		margin-top: 0.37vw;
+        margin-left: 33vw;
+		color: #121b42;
+		position:absolute;
+		
+	}
+	
+	#rememberme {
+    margin-left: -74vw;
+    color: #121b42;
+    font-size: 1.3vw;
+    margin-top: 3.7vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+}
+	
+	
+	
+	#rememberme input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+	
+	.checkmark {
+  position: absolute;
+  border: 0.1vw solid #121b42 ;
+  border-radius:0.35vw;
+  margin: 0.25vw 0 0 0.25vw;
+  height: 1.2vw;
+  width: 1.2vw;
+  background-color: whitesmoke;
+  margin: -1.3vw 0 0 8vw;
+}
+	
+	#rememberme input:checked ~ .checkmark {
+  background-color: whitesmoke;
+}
+	
+	.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+	
+	#rememberme input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+#rememberme .checkmark:after {
+ left: 0.3vw;
+top: 0px;
+width: 0.35vw;
+height: 0.7vw;
+border: solid #243785;
+  border-width: 0 0.2vw 0.2vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+	
+	.navbarbutton {
+		float:left;
+		
+		font-size:1.5vw;
+		color: whitesmoke;
+		text-decoration: none;
+		background-color: #243785;
+		line-height: 5vw;
+		border-right: 0.12vw #121b42 solid;
+		letter-spacing: 0.13vw;
+		font-weight: 100;
+		height: 5vw;
+		padding:0 3vw;
+	}
+	
+	#registerbutton {
+		
+		background-color: #ffd42a; 
+		border: 1vw #DC143C; 
+		font-weight:bold; 
+		letter-spacing: 0.18vw;
+		float:right;
+		font-size:2vw;
+		color: #243785;
+		text-decoration: none;
+		margin: 0.5vw 7vw 0 0vw;
+		line-height: 4vw;
+		border-radius: 0.5vw;
+		width: max-content;
+		height: 4vw;
+		padding: 0 1.5vw;
+		
+		
+	}
+	
+	#wavebackgrnd {
+		
+		background-image: url("../wave.svg");
+		background-size:cover;
+		
+		width: 100vw;
+		height: 29vw;
+		margin-top: 6vw;
+		position:absolute;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		z-index:998;
+	}
+	
+	#tiempo-entrega{
+		
+		color: #121b42;
+		margin: 4.5vw 15vw 0 0;
+		font-size: 2vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 200%;
+	}
+	
+	#pedidos-totales {
+		
+		color: #121b42;
+		margin: 4.5vw 0 0 15vw;
+		font-size: 2vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 200%;
+	}
+	
+	#pedidos-totales span {
+		
+		font-size: 2.3vw;
+		color: #ffd42a;
+		
+	}
+	
+	#tiempo-entrega span {
+		
+		font-size: 2.3vw;
+		color: #ffd42a;
+		
+	}
+	
+	#preciostitle {
+		
+		
+		color: #121b42;
+		font-size: 2.3vw; 
+		position: relative;
+		
+	}
+	
+	#pricepanelcontainer{
+		
+		display:flex;
+		width:100vw;
+		margin-top: 1.5vw
+	}
+	
+	.pricepanelshadow {
+		
+		width: 23vw;
+		height: 25.5vw;
+		border-right: 0.3vw solid #121b42;
+		border-radius: 2vw;
+		margin: 1.5vw auto 0 auto;
+		padding: 1vw 0 0 0;
+		background-color: #121b42;
+		
+	}
+	
+	.pricepanel {
+		
+		width: 23vw;
+		height: 24vw;
+		border: 0.15vw solid #243785; border-radius: 2vw;
+		margin-top: -1vw;
+		padding: 1vw 0 0 0;
+		background-color: #243785;
+	}
+	
+	.pricepanel span {
+		
+		font-size:1.8vw;
+		font-weight: 500;
+		color: #ffd42a;
+		
+		
+	}
+	
+	.pricepanel div {
+		
+		width: 15vw;                      
+		height: 17vw;
+		background-color: #243785;
+		text-align: justify;
+		display: flex;
+		margin-top: 2vw;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	.pricepanel div span  {
+		
+		font-size:1.4vw;
+		font-weight: 500;
+		color: whitesmoke;
+		padding-left: 1.5vw;
+	}
+	
+	.pricepanel aside {
+		width: 5vw;                      
+		height: 17vw;
+		background-color: #243785;
+		text-align: end;
+		display: flex;
+		margin-top: -17vw;
+		margin-right: 4.2vw;
+		flex-direction: column;
+		justify-content: space-around;
+	float:right;	
+		
+	}
+	
+	.pricepanel aside span  {
+		
+		font-size:1.8vw;
+		font-weight: 700;
+		color: #ffd42a;
+		padding-left: 1.7vw;
+	}
+	
+
+
+	.text-title {
+	
+		color: #ffd42a;
+		font-size: 2.5vw; 
+		position: relative;
+		padding: 1.5vw 0vw 1vw 0vw;
+}
+
+
+
+	.textplaceholder {
+		
+	width: 90vw;
+	
+	background-color: #243785;
+	border: 0.15vw solid #243785; border-radius: 2vw;
+		padding-bottom: 1.5vw;
+		
+}
+
+    .textplaceholdershadow {
+	
+		border-right: 0.30vw solid #121b42; border-radius: 2vw;
+		padding-bottom: 1vw;
+		background-color: #121b42;
+		width: 90vw;
+		margin:auto;
+}
+
+	.top-botton-spacing {
+	
+		margin: 3vw auto;
+		
+}
+
+	.text {
+	
+		padding: 1vw 2vw 1vw 2vw;
+color: #121b42;
+text-align: justify;
+font-size: 1.7vw;
+line-height: 200%;
+background-color: whitesmoke;
+width: 82.5vw;
+margin: auto;
+		
+
+}
+
+	.section-title{
+	
+		color: #ffd42a;
+		font-size: 2.8vw; 
+		padding: 1.5vw 0vw 1vw 0vw;
+		margin: 0 auto;
+		width: max-content;
+		letter-spacing: 0.1vw;
+}
+
+#opinionplaceholder {
+	
+	width: 90vw;
+	height: 30vw;
+	
+	margin: 0 auto 0 auto;
+	display: flex;
+	
+	
+}
+
+.opinioncontainer {
+	
+	width: 22vw;
+	height: 28vw;
+	background-color: whitesmoke;
+	margin: auto;
+	border-radius: 1vw;
+	
+}
+
+.opinioncontainer aside {
+	
+	width:6vw;
+	height:6vw;
+	background-color: whitesmoke;
+	margin: 1.5vw auto 0 auto;
+	border-radius: 5vw;
+	border: 0.2vw solid #243785;
+	background-image: url("../19b8d6e9b13eef23ec9c746968bb88b1.jpg");
+	background-size: contain;
+}
+
+.opinioncontainer img {
+	
+	width: 6vw;
+	height: 6vw;
+	
+}
+
+.opinioncontainer div {
+	
+	text-align: justify;
+font-size: 1.4vw;
+line-height: 175%;
+	padding: 1vw;
+	color:#243785;
+	min-height: 15vw;
+	
+}
+
+.opinioncontainer span {
+float: right;
+padding-right: 1.5vw;
+font-size: 1.4vw;
+letter-spacing: 0.1vw;	
+color:#243785;
+}
+
+footer {
+height: 4vw;
+width:100vw;
+background-color: #243785;
+position: absolute;
+margin-top: 242vw;
+	
+}
+
+footer aside {
+	float: right;
+	margin-right:2vw;
+	color: #ffd42a;
+	line-height: 4vw;
+}
+
+footer div {
+	float: left;
+	margin-left:1vw;
+	color: #ffd42a;
+	line-height: 4vw;
+	}
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+
+@media (min-width: 550px) and (max-width: 767px) {
+  
+  #navbar_sign_in {
+		width: 100vw;
+		height: 6vw;
+		background-color: #243785; 
+		position: fixed;
+		z-index: 999;	
+		overflow: hidden;
+		
+	}
+	
+	#section1 {
+			width:100vw;
+			height:31vw;
+			
+		}
+	#section2 {
+			width:100vw;
+			height: 30vw;
+			background-color: whitesmoke; 
+			text-align: center;
+		    position: absolute;
+            margin-top: 22vw;
+			padding-top: 1.5vw;
+		}
+	
+	
+	
+	#section3 {
+			width:100vw;
+			height: auto;
+			background-color: whitesmoke;
+			position: absolute;
+			margin-top: 63vw;
+			text-align: center;
+			padding: 1vw 0 0 0;
+			
+		}
+	#section4 {
+			width:100vw;
+			height: 53vw;
+			background-color: lightslategray;
+			position: absolute;
+			margin-top: 208vw;
+		}
+	
+	#imageplaceholder {
+		
+		width:50vw;
+		height:31vw;
+		background-color:lightslategray;
+		float: left;
+		padding-top: 2vw;
+	}
+	
+	#logoplaceholder {
+		
+		width:50vw;
+		height:31vw;
+		background-color: lightslategray;
+		float: right;
+		padding-top: 2vw;
+	}
+	
+	#maintitleplaceholder{
+		
+		width:100vw;
+		height: 3vw;
+		background-color:lightslategray;
+		text-align: center;
+		color: #121b42;
+		font-size: 3.6vw;
+		
+		letter-spacing: 0.2vw;
+		font-weight: 700;
+		padding: 11vw 0 6vw 0;
+	}
+	
+	#changingtext { 
+	color: #ffd42a;
+font-size: 3.6vw;
+font-weight: 1000;
+	}
+	
+	#fameimg {
+		
+		width: 64.8vw;
+		height: 21.6vw;
+		margin: 4vw 0 0 -9vw;
+		
+	}
+	
+	#dealerimg {
+		
+		width: 64.8vw;
+		height: 21.6vw;
+		margin: 3vw 0 0 -9vw;
+		
+	}
+	
+	#logosimg{
+		
+		margin-left: -30vw;
+		width: 60vw;
+	}
+	
+	#formplaceholder {
+		
+		width:100vw;
+		height:8vw;
+		background-color: lightslategray;
+		position: absolute;
+		
+	}
+	
+	#formbox {
+		
+		width:90vw;
+		height:auto;
+		background-color: lightslategray;
+		margin-left: 4.5vw;
+		
+		
+		
+	}
+	
+	#inputcontainer {
+	width: 81vw;
+	height:5vw;
+	background-color: lightslategray;
+	margin:auto;
+	margin-top: 0.5vw;
+	
+	
+		
+		
+	}
+	
+	.inputtextbox {
+	
+		width:30vw;
+		height:3.8vw;
+		border: 0.2vw #121b42 solid;
+		border-radius: 10vw;
+		margin-right: 1vw;
+		display: inline-block;
+		background-color: whitesmoke;
+		
+	}
+	
+	.inputtext {
+		height: 3.2vw;
+		width: 20vw;
+		margin-left: 1vw;
+		border: transparent 1px;
+		border-radius: 10vw;
+		background-color: whitesmoke;
+		letter-spacing: 0.1vw;
+		font-size: 1.4vw;
+		position: absolute
+		
+		
+	}
+	
+	.inputtext:focus {
+		
+		outline: none;
+	}
+	
+	#signinbutton {
+		
+		color:whitesmoke;
+		width: 16vw;
+		height: 4vw;
+		border: 0.2vw #121b42 solid;
+		border-radius: 1vw;
+		background-color:  #243785; 
+		font-family: 'TREBUCHET MS', sans-serif;
+		font-size: 1.5vw;
+		font-weight: 600;
+		letter-spacing: 0vw;
+		position: absolute;
+		
+	}
+	
+	#resetpasswordtext {
+		font-size: 1.5vw;
+		float:right;
+		margin-top: -0.5vw;
+        margin-left: 33vw;
+		color: #121b42;
+		position:absolute;
+		
+	}
+	
+	#rememberme {
+    margin-left: -61vw;
+    color: #121b42;
+    font-size: 1.5vw;
+    margin-top: 4.3vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+}
+	
+	
+	
+	#rememberme input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+	
+	.checkmark {
+  position: absolute;
+  border: 0.1vw solid #121b42 ;
+  border-radius:0.35vw;
+  margin: 0.25vw 0 0 0.25vw;
+  height: 1.4vw;
+  width: 1.4vw;
+  background-color: whitesmoke;
+  margin: -1.5vw 0 0 9vw;
+}
+	
+	#rememberme input:checked ~ .checkmark {
+  background-color: whitesmoke;
+}
+	
+	.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+	
+	#rememberme input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+#rememberme .checkmark:after {
+ left: 0.3vw;
+top: 0px;
+width: 0.45vw;
+height: 0.8vw;
+border: solid #243785;
+  border-width: 0 0.2vw 0.2vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+	
+	.navbarbutton {
+		float:left;
+		
+		font-size:2vw;
+		color: whitesmoke;
+		text-decoration: none;
+		background-color: #243785;
+		line-height: 6vw;
+		border-right: 0.12vw #121b42 solid;
+		letter-spacing: 0.13vw;
+		font-weight: 100;
+		height: 6vw;
+		padding:0 3vw;
+	}
+	
+	#registerbutton {
+		
+		background-color: #ffd42a; 
+		border: 1vw #DC143C; 
+		font-weight:bold; 
+		letter-spacing: 0.18vw;
+		float:right;
+		font-size:2.6vw;
+		color: #243785;
+		text-decoration: none;
+		margin: 0.5vw 7vw 0 0vw;
+		line-height: 5vw;
+		border-radius: 0.5vw;
+		width: max-content;
+		height: 5vw;
+		padding: 0 1.5vw;
+		
+		
+	}
+	
+	#wavebackgrnd {
+		
+		background-image: url("../wave.svg");
+		background-size:cover;
+		
+		width: 100vw;
+		height: 29vw;
+		margin-top: 7vw;
+		position:absolute;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		z-index:998;
+	}
+	
+	#tiempo-entrega{
+		
+		color: #121b42;
+		margin: 4vw 15vw 0 0;
+		font-size: 2.5vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 160%;
+	}
+	
+	#pedidos-totales {
+		
+		color: #121b42;
+		margin: 4vw 0 0 15vw;
+		font-size: 2.5vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 160%;
+	}
+	
+	#pedidos-totales span {
+		
+		font-size: 2.8vw;
+		color: #ffd42a;
+		
+	}
+	
+	#tiempo-entrega span {
+		
+		font-size: 2.8vw;
+		color: #ffd42a;
+		
+	}
+	
+	#preciostitle {
+		
+		
+		color: #121b42;
+		font-size: 2.9vw; 
+		position: relative;
+		letter-spacing: 0.2;
+	}
+	
+	#pricepanelcontainer{
+		
+		display:flex;
+		width:100vw;
+		margin-top: 1.5vw
+	}
+	
+	.pricepanelshadow {
+		
+		width: 28vw;
+		height: 28vw;
+		border-right: 0.5vw solid #121b42;
+		border-radius: 2vw;
+		margin: 1.5vw auto 0 auto;
+		padding: 1vw 0 0 0;
+		background-color: #121b42;
+		
+	}
+	
+	.pricepanel {
+		
+		width: 28vw;
+		height: 26vw;
+		border: 0.15vw solid #243785; border-radius: 2vw;
+		margin-top: -1vw;
+		padding: 1vw 0 0 0;
+		background-color: #243785;
+	}
+	
+	.pricepanel span {
+		
+		font-size:2.3vw;
+		font-weight: 500;
+		color: #ffd42a;
+		
+		
+	}
+	
+	.pricepanel div {
+		
+		width: 21vw;                      
+		height: 20vw;
+		background-color: #243785;
+		text-align: justify;
+		display: flex;
+		margin-top: 2vw;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	.pricepanel div span  {
+		
+		font-size:1.7vw;
+		font-weight: 500;
+		color: whitesmoke;
+		padding-left: 1.5vw;
+	}
+	
+	.pricepanel aside {
+		width: 5vw;                      
+		height: 21vw;
+		background-color: #243785;
+		text-align: end;
+		display: flex;
+		margin-top: -20.5vw;
+		margin-right: 4.2vw;
+		flex-direction: column;
+		justify-content: space-around;
+	float:right;	
+		
+	}
+	
+	.pricepanel aside span  {
+		
+		font-size:2.2vw;
+		font-weight: 700;
+		color: #ffd42a;
+		padding-left: 0vw;
+	}
+	
+
+
+	.text-title {
+	
+		color: #ffd42a;
+		font-size: 2.5vw; 
+		position: relative;
+		padding: 1.5vw 0vw 1vw 0vw;
+}
+
+
+
+	.textplaceholder {
+		
+	width: 90vw;
+	
+	background-color: #243785;
+	border: 0.15vw solid #243785; border-radius: 2vw;
+		padding-bottom: 1.5vw;
+		
+}
+
+    .textplaceholdershadow {
+	
+		border-right: 0.30vw solid #121b42; border-radius: 2vw;
+		padding-bottom: 1vw;
+		background-color: #121b42;
+		width: 90vw;
+		margin:auto;
+}
+
+	.top-botton-spacing {
+	
+		margin: 3vw auto;
+		
+}
+
+	.text {
+	
+		padding: 1vw 2vw 1vw 2vw;
+color: #121b42;
+text-align: justify;
+font-size: 1.7vw;
+line-height: 200%;
+background-color: whitesmoke;
+width: 82.5vw;
+margin: auto;
+		
+
+}
+
+	.section-title{
+	
+		color: #ffd42a;
+		font-size: 2.8vw; 
+		padding: 0vw 0vw 3vw 0vw;
+		margin: 0 auto;
+		width: max-content;
+		letter-spacing: 0.1vw;
+		
+}
+
+#opinionplaceholder {
+	
+	width: 90vw;
+	height: 30vw;
+	
+	margin: 0 auto 0 auto;
+	display: flex;
+	
+	
+}
+
+.opinioncontainer {
+	
+	width: 25vw;
+	height: 28vw;
+	background-color: whitesmoke;
+	margin: auto;
+	border-radius: 1vw;
+	
+}
+
+.opinioncontainer aside {
+	
+	width:6vw;
+	height:6vw;
+	background-color: whitesmoke;
+	margin: 1.5vw auto 0 auto;
+	border-radius: 5vw;
+	border: 0.2vw solid #243785;
+	background-image: url("../19b8d6e9b13eef23ec9c746968bb88b1.jpg");
+	background-size: contain;
+}
+
+.opinioncontainer img {
+	
+	width: 6vw;
+	height: 6vw;
+	
+}
+
+.opinioncontainer div {
+	
+	text-align: justify;
+font-size: 1.6vw;
+line-height: 175%;
+	padding: 1vw;
+	color:#243785;
+	min-height: 15vw;
+	
+}
+
+.opinioncontainer span {
+float: right;
+padding-right: 1.5vw;
+font-size: 1.6vw;
+letter-spacing: 0.1vw;	
+color:#243785;
+}
+
+footer {
+height: 4vw;
+width:100vw;
+background-color: #243785;
+position: absolute;
+margin-top: 260vw;
+	
+}
+
+footer aside {
+	float: right;
+	margin-right:2vw;
+	color: #ffd42a;
+	line-height: 4vw;
+}
+
+footer div {
+	float: left;
+	margin-left:1vw;
+	color: #ffd42a;
+	line-height: 4vw;
+	}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width : 296px ) and ( max-width : 549px ){
+  
+	body {background-color: lightslategray;}
+	
+	
+  #navbar_sign_in {
+		width: 100vw;
+		height: 10vw;
+		background-color: #243785; 
+		position: fixed;
+		z-index: 999;	
+		overflow: hidden;
+		
+	}
+	
+	#section1 {
+			width:100vw;
+			height:31vw;
+			
+		}
+	#section2 {
+			width:100vw;
+			height: 200vw;
+			background-color: whitesmoke; 
+			text-align: center;
+		    position: absolute;
+            margin-top: 49vw;
+			padding-top: 15vw;
+		}
+	
+	
+	
+	#section3 {
+			width:100vw;
+			height: auto;
+			background-color: whitesmoke;
+			position: absolute;
+			margin-top: 260vw;
+			text-align: center;
+			padding: 1vw 0 0 0;
+			
+		}
+	#section4 {
+			width:100vw;
+			height: 53vw;
+			background-color: lightslategray;
+			position: absolute;
+			margin-top: 2080vw;
+		}
+	
+	#imageplaceholder {
+		
+		width:100vw;
+		height:31vw;
+		background-color:lightslategray;
+		float: left;
+		padding-top: 5vw;
+	}
+	
+	#logoplaceholder {
+		
+		width:100vw;
+		height:31vw;
+		background-color: lightslategray;
+		margin: 0 0 0 0vw;
+		padding-top: 2vw;
+	}
+	
+	#maintitleplaceholder{
+		
+		width:60vw;
+		height: 4vw;
+		background-color:lightslategray;
+		text-align: center;
+		color: #121b42;
+		font-size: 4.5vw;
+		margin: 55vw auto 0 auto;
+		letter-spacing: 0.2vw;
+		font-weight: 700;
+		padding: 9vw 0 13vw 0;
+	}
+	
+	#changingtext { 
+	color: #ffd42a;
+font-size: 4.8vw;
+font-weight: 1000;
+	}
+	
+	#fameimg {
+		
+		width: 100vw;
+		
+		margin: 4vw 0 0 -9vw;
+		
+	}
+	
+	#dealerimg {
+		
+		width: 100vw;
+		
+		margin: 0 0 0 -4vw;
+		
+	}
+	
+	#logosimg{
+		
+		margin: 2vw 0 0 0vw;
+		width: 100vw;
+	}
+	
+	#formplaceholder {
+		
+		width:100vw;
+		height:82vw;
+		background-color: lightslategray;
+		position: absolute;
+		
+	}
+	
+	#formbox {
+		
+		width:90vw;
+		height:auto;
+		background-color: lightslategray;
+		margin-left: 4.5vw;
+		
+		
+		
+	}
+	
+	#inputcontainer {
+	width: 75vw;
+	height:26vw;
+	
+	margin:auto;
+	margin-top: 0.5vw;
+	border-radius: 2vw;
+	background-color: #243785
+	
+	}
+	
+	
+	
+	.inputtextbox {
+		position:absolute;
+		width:35vw;
+		height:6vw;
+		border: 0.4vw #121b42 solid;
+		border-radius: 10vw;
+		margin-right: 0vw;
+		display: inline-block;
+		background-color: whitesmoke;
+		margin: 3vw 0 0 2vw
+	}
+	
+	#inputtextbox2 {
+		position:absolute;
+		margin: 12vw 0 0 2vw
+		
+	}
+	
+	.inputtext {
+		height: 5vw;
+		width: 30vw;
+		margin-left: 1vw;
+		border: transparent 1px;
+		border-radius: 10vw;
+		background-color: whitesmoke;
+		letter-spacing: 0.1vw;
+		font-size: 2.8vw;
+		position: absolute
+		
+		
+	}
+	
+	.inputtext:focus {
+		
+		outline: none;
+	}
+	
+	#signinbutton {
+		
+		color:#121b42;
+		width: max-content;
+		height: 6vw;
+		border: 0.2vw #ffd42a solid;
+		border-radius: 1vw;
+		background-color:  #ffd42a; 
+		font-family: 'TREBUCHET MS', sans-serif;
+		font-size: 3vw;
+		font-weight: 600;
+		letter-spacing: 0.3vw;
+		position: absolute;
+		margin: 12.2vw 0 0 42vw;
+		padding: 0 2vw;
+	}
+	
+	#resetpasswordtext {
+		
+		float:right;
+		font-size: 2.5vw;
+		color: whitesmoke;
+		position:absolute;
+		margin: 20vw 0 0 3vw;
+	}
+	
+	#rememberme {
+    margin: 20vw 0 0 43vw;
+    color: whitesmoke;
+    font-size: 2.5vw;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+}
+	
+	
+	
+	#rememberme input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+	
+	.checkmark {
+  position: absolute;
+  border: 0.2vw solid #ffd42a ;
+  border-radius:0.6vw;
+  margin: -2.6vw 0 0 16vw;
+  height: 2.3vw;
+  width: 2.3vw;
+  background-color: whitesmoke;
+  
+}
+	
+	#rememberme input:checked ~ .checkmark {
+  background-color: whitesmoke;
+}
+	
+	.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+	
+	#rememberme input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+#rememberme .checkmark:after {
+ left: 0.6vw;
+top: 0vw;
+width: 0.9vw;
+height: 1.5vw;
+border: solid #243785;
+  border-width: 0 0.2vw 0.2vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+	
+	.navbarbutton {
+		float:left;
+		
+		font-size:3vw;
+		color: whitesmoke;
+		text-decoration: none;
+		background-color: #243785;
+		line-height: 10vw;
+		border-right: 0.12vw #121b42 solid;
+		letter-spacing: 0.13vw;
+		font-weight: 100;
+		height: 10vw;
+		padding:0 3vw;
+	}
+	
+	#registerbutton {
+		
+		background-color: #ffd42a; 
+		border: 1vw #DC143C; 
+		font-weight:bold; 
+		letter-spacing: 0.18vw;
+		float:right;
+		font-size:3.6vw;
+		color: #243785;
+		text-decoration: none;
+		margin: 1vw 4vw 0 0vw;
+		line-height: 8vw;
+		border-radius: 1vw;
+		width: max-content;
+		height: 8vw;
+		padding: 0 1.5vw;
+		
+		
+	}
+	
+	#wavebackgrnd {
+		
+		background-image: url("../wave.svg");
+		
+		background-size:contain;
+		background-repeat: no-repeat;
+		width: 102vw;
+		height: 50vw;
+		margin-left: -1vw;
+		margin-top: 48vw;
+		position:absolute;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		z-index:998;
+		
+	}
+	
+	#tiempo-entrega{
+		width: 40vw;
+		color: #121b42;
+		margin: -12vw 0vw 0 0;
+		font-size: 4vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 160%;
+		padding-left: 2vw
+	}
+	
+	#pedidos-totales {
+		width: 40vw;
+		color: #121b42;
+		margin: -12vw 0 0 19vw;
+		font-size: 4vw;
+		font-weight: 700;
+		letter-spacing: 0.1vw;
+		line-height: 160%;
+	}
+	
+	#pedidos-totales span {
+		
+		font-size: 4.5vw;
+		color: #ffd42a;
+		margin-top: 2vw;
+	}
+	
+	#tiempo-entrega span {
+		
+		font-size: 4.5vw;
+		color: #ffd42a;
+		
+	}
+	
+	#preciostitle {
+		
+		
+		color: #121b42;
+		font-size: 3.5vw; 
+		position: relative;
+		letter-spacing: 0.2;
+	}
+	
+	#pricepanelcontainer{
+		
+		display:flex;
+		flex-direction: column;
+		width:100vw;
+		margin-top: 1.5vw
+	}
+	
+	.pricepanelshadow {
+		
+		width: 50vw;
+		height: 56.5vw;
+		border-right: 0.5vw solid #121b42;
+		border-radius: 3vw;
+		margin: 4vw auto 1vw auto;
+		padding: 1vw 0 0 0;
+		background-color: #121b42;
+		
+	}
+	
+	.pricepanel {
+		
+		width: 50vw;
+		height: 52vw;
+		border: 0.15vw solid #243785; border-radius: 2.5vw;
+		margin-top: -1vw;
+		padding: 1vw 0 0 0;
+		background-color: #243785;
+		padding-top:3vw;
+	}
+	
+	.pricepanel span {
+		
+		font-size:4vw;
+		font-weight: 500;
+		color: #ffd42a;
+		
+		
+		
+	}
+	
+	.pricepanel div {
+		
+		width: 30vw;                      
+		height: 40vw;
+		background-color: #243785;
+		text-align: justify;
+		display: flex;
+		margin-top: 2vw;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	.pricepanel div span  {
+		
+		font-size:3vw;
+		font-weight: 500;
+		color: whitesmoke;
+		padding-left: 2.5vw;
+	}
+	
+	.pricepanel aside {
+		width: 5vw;                      
+		height: 40vw;
+		background-color: #243785;
+		text-align: end;
+		display: flex;
+		margin-top: -39.6vw;
+		margin-right: 9vw;
+		flex-direction: column;
+		justify-content: space-around;
+	float:right;	
+		
+	}
+	
+	.pricepanel aside span  {
+		
+		font-size:3vw;
+		font-weight: 700;
+		color: #ffd42a;
+		padding-left: 0vw;
+	}
+	
+
+
+	.text-title {
+	
+		color: #ffd42a;
+		font-size: 2.5vw; 
+		position: relative;
+		padding: 1.5vw 0vw 1vw 0vw;
+}
+
+
+
+	.textplaceholder {
+		
+	width: 90vw;
+	
+	background-color: #243785;
+	border: 0.15vw solid #243785; border-radius: 2vw;
+		padding-bottom: 1.5vw;
+		
+}
+
+    .textplaceholdershadow {
+	
+		border-right: 0.30vw solid #121b42; border-radius: 2vw;
+		padding-bottom: 1vw;
+		background-color: #121b42;
+		width: 90vw;
+		margin:auto;
+}
+
+	.top-botton-spacing {
+	
+		margin: 3vw auto;
+		
+}
+
+	.text {
+	
+		padding: 1vw 2vw 1vw 2vw;
+color: #121b42;
+text-align: justify;
+font-size: 1.7vw;
+line-height: 200%;
+background-color: whitesmoke;
+width: 82.5vw;
+margin: auto;
+		
+
+}
+
+	.section-title{
+	
+		color: #ffd42a;
+		font-size: 2.8vw; 
+		padding: 0vw 0vw 3vw 0vw;
+		margin: 0 auto;
+		width: max-content;
+		letter-spacing: 0.1vw;
+		
+}
+
+#opinionplaceholder {
+	
+	width: 90vw;
+	height: 30vw;
+	
+	margin: 0 auto 0 auto;
+	display: flex;
+	
+	
+}
+
+.opinioncontainer {
+	
+	width: 25vw;
+	height: 28vw;
+	background-color: whitesmoke;
+	margin: auto;
+	border-radius: 1vw;
+	
+}
+
+.opinioncontainer aside {
+	
+	width:6vw;
+	height:6vw;
+	background-color: whitesmoke;
+	margin: 1.5vw auto 0 auto;
+	border-radius: 5vw;
+	border: 0.2vw solid #243785;
+	background-image: url("../19b8d6e9b13eef23ec9c746968bb88b1.jpg");
+	background-size: contain;
+}
+
+.opinioncontainer img {
+	
+	width: 6vw;
+	height: 6vw;
+	
+}
+
+.opinioncontainer div {
+	
+	text-align: justify;
+font-size: 1.6vw;
+line-height: 175%;
+	padding: 1vw;
+	color:#243785;
+	min-height: 15vw;
+	
+}
+
+.opinioncontainer span {
+float: right;
+padding-right: 1.5vw;
+font-size: 1.6vw;
+letter-spacing: 0.1vw;	
+color:#243785;
+}
+
+footer {
+height: 4vw;
+width:100vw;
+background-color: #243785;
+position: absolute;
+margin-top: 260vw;
+	
+}
+
+footer aside {
+	float: right;
+	margin-right:2vw;
+	color: #ffd42a;
+	line-height: 4vw;
+}
+
+footer div {
+	float: left;
+	margin-left:1vw;
+	color: #ffd42a;
+	line-height: 4vw;
+	}
+  
+}
+
